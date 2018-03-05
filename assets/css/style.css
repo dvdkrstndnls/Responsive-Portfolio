@@ -132,17 +132,24 @@ body {
     margin: 0 0 40px;
     background: #fff;
     border: 1px solid #ddd;
+    clear: both;
     
   }
 
   aside {
-    float: left;
-    width: 16%;
-    max-width: 960px;
-    padding: 30px;
-    margin: 0 0 40px;
-    background: #fff;
-    border: 1px solid #ddd;
+    position: absolute;
+    top: 130px; right: 120px;
+    
+
+    float: right;
+  width: 100%;
+  max-width: 270px;
+  padding: 30px;
+  margin-bottom: 20px;
+  background: #fff;
+  border: 1px solid #ddd;
+
+
   }
   
   /* portfolio page */
@@ -252,17 +259,110 @@ body {
     width:100%;
     margin-bottom: 20px;
   }
+
+  aside {
+    
+    position: relative;
+bottom: 50px; left: -300px;
+  }
 }
 
-@media only screen and (max-width: 768px) and (min-width: 641px)  {
+/* this is 731px change the details to connect to index, and style it right*/
+@media only screen and (max-width: 768px) {
+  
+  
+  .container {
+    padding: 0 20px;
+    max-width: 768px;
+    /* clear: both     */
+  }
+  
 
+
+  
+  #main-container {
+    padding-top: 130px;
+  }
+
+  .main-section {
+    max-width: 420px;
+  }
+
+  .work {
+    width: 100%;
+  }
+
+  .auth-image {
+    width:100%;
+    margin-bottom: 20px;
+  }
+
+  aside {
+    max-width: 640px;
+    position: sticky;
+bottom: 500px; 
+
+  }
+}
+
+
+/* this is 640px change the details to connect to index, and style it right*/
+@media only screen and (max-width: 640px) {
+  
+  header {
+    position: static;
+  }
+  
+  .container {
+    padding: 0 20px;
+    max-width: 640px;
+    clear: both    
+  }
+  
+
+
+  
+  #main-container {
+    padding-top: 130px;
+  }
+
+  .main-section {
+    max-width: 620px;
+  }
+
+  .work {
+    width: 100%;
+  }
+
+  .auth-image {
+    width:100%;
+    margin-bottom: 20px;
+  }
+
+  aside {
+    
+    position: sticky;
+    max-width: 70%;
+    margin: 20px;
+    padding: 20px;
+    bottom: 500px; 
+    max-width: 65%;
+/* left: -300px; */
+  }
+}
+
+/* @media only screen and (max-width: 768px)  {
+  <div class="row">
+  <div class="col-xs-12 col-md-8">.col-xs-12 .col-md-8</div>
+  <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+</div>
 }
 
 @media only screen and (max-width: 640px)  {
   .header {
     width:960px;
     
-}
+} */
 
 
 
@@ -282,10 +382,9 @@ Be sure to include the viewport tag in all your HTML files, otherwise your media
 Protip: Use the Chrome extensions Window Resizer and Browser Width to see the browser dimensions in Chrome.
 Deploy your new portfolio (now with media queries!) to GitHub Pages.
 
-Submitting Your Work on BootCampSpot
-
-Submit the GitHub links to your portfolio repositories on GitHub.
-Submit the link to your (GitHub Pages) deployed site in the same input field.
+DONE Submitting Your Work on BootCampSpot
+-Submit the GitHub links to your portfolio repositories on GitHub.
+-Submit the link to your (GitHub Pages) deployed site in the same input field.
 
 BONUS
 Incorporate CSS animations in your portfolio. More info here.
